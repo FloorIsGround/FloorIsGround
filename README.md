@@ -3,20 +3,49 @@
 > Software developer with a focus on backend systems, data pipelines, and infrastructure automation.
 
 ---
+## What I use
 
-## Live Pipeline Stats
+- **Languages:** Python, TypeScript, Javascript, Java, C, C++, and C#
+- **Databases:** PostgreSQL, Redis
+- **Infrastructure:** Proxmox cluster (Primarily work in ubuntu, debian, or mint distros), Cloudflare networking, and I handle my own DNS
+- **Tools:** Docker, [pg admin 4](https://www.pgadmin.org/), [Postman](https://www.postman.com/), [Caddy + L4 plugin](https://github.com/mholt/caddy-l4)
 
-> Auto-updated by a self-hosted runner on my home lab cluster. Data is sourced from a time-series sampling system that has been running continuously since November 2025.
+---
+
+## Things I do
+
+### Data Engineering
+- Applying the ETL pipeline  
+- Automated collection of data
+- Aggregation and statistics
+- Finding useful ways to use that data
+
+**Related Projects:** [LLM Classification](#llm-classification-system), [Large Text Ingestion Service](#document-ingestion-pipeline), [Geospatial Data Pipeline](#live-data-pipeline)
+
+### Backend Development
+- API Development and familiarity with many protocols (HTTPS/WSS/gRPC etc.)
+- API security and failure point testing
+- Optimization of backend software for large scale use
+- Database creation, modeling, and management
+
+**Related Projects:** [Geospatial Data Pipeline API](#live-data-pipeline), [Centralized Authentication Service](#centralized-authentication-service), [Invoice & Receipt Service](#invoice--receipt-generation-api-service)
+
+
+---
+
+## Live Data Pipeline
+
+> Auto-updated stats by a self-hosted runner on my home lab cluster. Data is sourced from a time-series sampling system that has been running continuously since November 2025.
 
 | Metric | Value |
 |---|---|
-| Total samples collected | 8,135,514 |
+| Total samples collected | 8,141,304 |
 | Pipeline running since | November 2025 |
 | Days of uptime | 120 |
-| Avg samples / day | 67,796 |
-| Last recorded sample | 2026-03-24 20:10 UTC |
+| Avg samples / day | 67,844 |
+| Last recorded sample | 2026-03-24 21:12 UTC |
 
-The pipeline ingests high-frequency samples at a fixed interval, stores them in PostgreSQL, and exposes aggregate metrics here. Collection runs on a self-hosted Proxmox cluster with automated scheduling via GitHub Actions.
+The pipeline ingests high-frequency samples at a fixed interval, stores them in PostgreSQL, and exposes aggregate metrics here. Collection runs on a self-hosted Proxmox cluster with automated scheduling via GitHub Actions. [Related to this project](#automated-data-collection-and-aggregation-service)
 
 ---
 
@@ -64,15 +93,6 @@ I also built this as an embeddable fastify plugin so it could be plugged in easi
 **Status:** Active
 
 The API is not for public use.
-
----
-
-## Stack
-
-- **Languages:** Python, TypeScript, Javascript, Java, C, C++, and C#
-- **Databases:** PostgreSQL, Redis
-- **Infrastructure:** Proxmox cluster (Primarily work in ubuntu, debian, or mint distros), Cloudflare networking, and I handle my own DNS
-- **Tools:** Docker, [pg admin 4](https://www.pgadmin.org/), [Postman](https://www.postman.com/), [Caddy + L4 plugin](https://github.com/mholt/caddy-l4)
 
 ---
 
