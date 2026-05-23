@@ -39,7 +39,7 @@
 
 | Metric | Value |
 |---|---|
-| Total samples collected | 12,490,710 |
+| Total samples collected | 12,490,784 |
 | Pipeline running since | November 2025 |
 | Days of uptime | 180 |
 | Avg samples / day | 69,393 |
