@@ -39,11 +39,11 @@
 
 | Metric | Value |
 |---|---|
-| Total samples collected | 17,704,904 |
+| Total samples collected | 17,814,653 |
 | Pipeline running since | November 2025 |
 | Days of uptime | 186 |
-| Avg samples / day | 95,188 |
-| Last recorded sample | 2026-05-29 18:02 UTC |
+| Avg samples / day | 95,778 |
+| Last recorded sample | 2026-05-29 20:54 UTC |
 
 The pipeline ingests high-frequency samples at a fixed interval, stores them in PostgreSQL, and exposes aggregate metrics here. Collection runs on a self-hosted Proxmox cluster with automated scheduling via GitHub Actions. [Related to this project](#automated-data-collection-and-aggregation-service)
 
