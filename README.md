@@ -1,6 +1,6 @@
-# Hi, I'm Jace
+# Hello,
 
-> Software developer with a focus on backend systems, data pipelines, and infrastructure automation.
+> Network engineer working across software, infrastructure, data systems, and AI.
 
 ---
 ## What I use
@@ -35,17 +35,19 @@
 
 ## Live Data Pipeline
 
-> Auto-updated stats by a self-hosted runner on my home lab cluster. Data is sourced from a time-series sampling system that has been running continuously since November 2025.
+> Auto-updated stats by a self-hosted runner on my home lab cluster. Data is sourced from a time-series sampling system, with collection history beginning in November 2025.
 
 | Metric | Value |
 |---|---|
-| Total samples collected | 39,447,001 |
+| Total samples collected | 42,984,952 |
 | Pipeline running since | November 2025 |
-| Days of uptime | 299 |
-| Avg samples / day | 131,930 |
-| Last recorded sample | 2026-09-19 21:03 UTC |
+| Days up | 320.40 |
+| Avg samples / day | 134,161 |
+| Last recorded sample | 2026-10-11 04:38 UTC |
 
-The pipeline ingests high-frequency samples at a fixed interval, stores them in PostgreSQL, and exposes aggregate metrics here. Collection runs on a self-hosted Proxmox cluster with automated scheduling via GitHub Actions. [Related to this project](#automated-data-collection-and-aggregation-service)
+Days up represents the span between the first and latest stored samples, not measured uninterrupted uptime. The average uses that exact elapsed span.
+
+The pipeline ingests high-frequency samples at a fixed interval, stores them in TimescaleDB on PostgreSQL, and exposes aggregate metrics here. Collection runs on a self-hosted Proxmox cluster; GitHub Actions schedules this profile update. [Related to this project](#automated-data-collection-and-aggregation-service)
 
 ---
 
