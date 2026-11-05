@@ -39,11 +39,11 @@
 
 | Metric | Value |
 |---|---|
-| Total samples collected | 45,441,533 |
+| Total samples collected | 45,475,779 |
 | Pipeline running since | November 2025 |
-| Days up | 345.87 |
-| Avg samples / day | 131,384 |
-| Last recorded sample | 2026-11-05 15:54 UTC |
+| Days up | 346.11 |
+| Avg samples / day | 131,392 |
+| Last recorded sample | 2026-11-05 21:40 UTC |
 
 Days up represents the span between the first and latest stored samples, not measured uninterrupted uptime. The average uses that exact elapsed span.
 
